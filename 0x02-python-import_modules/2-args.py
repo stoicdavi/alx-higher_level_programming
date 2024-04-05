@@ -1,7 +1,6 @@
 #!/usr/bin/python3
 import sys
-#getting number of arguments
-arguments = len(sys.argv) - 1 # subtracting 1 because the first argument is the name of the file
+arguments = len(sys.argv) - 1
 if arguments == 0:
     print(":")
 elif arguments == 1:
