@@ -1,13 +1,15 @@
 #!/usr/bin/python3
-if __name__ == "__main__":
-    from sys import argv
+from sys import argv
 
-    arguments = len(argv) - 1
-    if arguments == 0:
+def main():
+    argument_count = len(argv) - 1 # subtract 1 to exclude the script name
+    if argument_count == 0:
         print("0 arguments.")
-    elif arguments == 1:
-        print("{}: {} argument:".format(arguments, argv[1]))
+    elif argument_count == 1:
+        print("1 argument:")
     else:
-        print("{} arguments:".format(arguments))
-        for i in range(1, arguments + 1):
-            print("{}: {}".format(i, argv[i]))
+        print("{} arguments:".format(argument_count))
+    for i in range(1, argument_count + 1):
+        print("{}: {}".format(i, argv[i]))
+if __name__ == "__main__":
+    main()
