@@ -3,15 +3,15 @@ from sys import argv
 
 
 def main():
-    argument_count = len(argv) - 1
-    if argument_count == 0:
+    arg_count = len(argv) - 1  # Exclude the script name
+    if arg_count == 0:
         print("0 arguments.")
-    elif argument_count == 1:
+    elif arg_count == 1:
         print("1 argument:")
     else:
-        print("{} arguments:".format(argument_count))
+        print("{} arguments:".format(arg_count))
 
-    for i in range(1, argument_count + 1):
+    for i in range(1, len(argv)):
         print("{}: {}".format(i, argv[i]))
 
 
