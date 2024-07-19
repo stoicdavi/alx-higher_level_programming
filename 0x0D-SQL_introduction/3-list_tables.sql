@@ -1,3 +1,3 @@
--- lists all the tables of a database in your MySQL server
--- The database name will be passed as argument of mysql command
-SHOW TABLES;
+-- lists all the tables of a database in mysql server
+-- database name will be passed as argument of mysql command
+SHOW tables;
