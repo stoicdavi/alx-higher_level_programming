@@ -1,3 +1,1 @@
-SQL - Introduction
-SQL
-MySQL
+#0x0D. SQL - Introduction
